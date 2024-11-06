@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr 300px / 1fr 1fr 1fr 1fr;
+  }
+  
+  header {
+    background: #003366;
+    /*padding: 2rem;*/
+    grid-column: 1 / 5;
+    font-family: Montserrat Alternates;
+  }
+  
+  .left-sidebar {
+    background: lightblue;
+    grid-column: 1 / 2;
+  }
+  
+  main {
+    background: #D3D3D3;
+    grid-column: 1 / 4;
+    font-family: Montserrat Alternates;
+  }
+  
+  .right-sidebar {
+    background: #708090;
+    grid-column: 4 / 5;
+    font-family: Montserrat Alternates;
+  }
+  
+  footer {
+    background: #003366;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 5;
+    font-family: Montserrat Alternates;
+  }
+  
+  .left-sidebar,
+  .right-sidebar {
+    padding: 1rem;
+  }
+
+  nav {
+	/*margin: 0 auto 2rem;
+	max-width: 90vw;*/
+}
+
+.modern a {
+	flex: 1 1 100%;
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+	background-color: #87CEEB;
+	align-items: center;
+}
+.navigation li {
+	flex: 1 1 auto; /* difference between auto and 100% flex-basis - turn on link borders to view */
+}
+.navigation a {
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+/* 	border: 1px dotted cyan; */
+}
+.navigation a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: #003366;
+}
+
+.wrap {
+		flex-wrap: wrap;
+}
+
+p {
+	text-align: center;
+	font-size: smaller;
+}
