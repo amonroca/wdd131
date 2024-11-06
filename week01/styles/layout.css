@@ -43,11 +43,6 @@ body {
     padding: 1rem;
   }
 
-  nav {
-	/*margin: 0 auto 2rem;
-	max-width: 90vw;*/
-}
-
 .modern a {
 	flex: 1 1 100%;
 }
