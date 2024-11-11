@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Exo 2", sans-serif;
+}
+
+header, nav, main, footer {
+    max-width: 1024px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: darkolivegreen;
+    color: #fff;
+}
+
+header span {
+    font-size: 1.8rem;
+    padding: 1rem;
+    align-content: center;
+}
+
+.parent {
+    margin: 0 2vw 0rem 2vw;
+}
+
+.parent section {
+    border: 1px solid #415541;
+    background-color: #e9f5e9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.parent h2 {
+    background-color: #415541;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: .75rem 0;
+}
+
+.parent h3 {
+    margin: 1rem 2vw 0 2vw;
+    border-bottom: 1px solid grey;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.parent ul {
+    padding: 10px;
+}
+
+.parent p {
+    padding: 10px;
+    text-align: left;
+}
+
+nav {
+    background-color: #154e13;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    background-color: #415541;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer span {
+    display: block;
+}
+
+.flag {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.flag img {
+    padding-right: 10px;
+}
+
+.photo {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.photo img {
+    padding-left: 10px;
+}
+
+.styled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.styled li {
+    padding-left: 1rem;
+    text-indent: -0.75rem;
+}
+
+.styled li:before {
+    content: '🚀 ';
+}
+
+@media only screen and (min-width: 650px) {
+
+    header span {
+        font-size: 2.5rem;
+    }
+    
+    .parent {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+
+    .parent section {
+        box-shadow: 1px 1px 10px black;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    footer p {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
