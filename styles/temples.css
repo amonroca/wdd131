@@ -76,7 +76,7 @@ nav {
 .navigation a:hover {
 	background-color: whitesmoke;
 	color: navy;
-    border: 2px solid rgba(218, 165, 32, 0.459);
+    border: 1px solid rgba(218, 165, 32, 0.459);
 	font-weight: 700;
 }
 

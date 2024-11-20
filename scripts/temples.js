@@ -1,4 +1,4 @@
-async function fetchTemples() {
+/*async function fetchTemples() {
     const response = await fetch('https://byui-cse.github.io/cse121b-ww-course/resources/temples.json');
     const temples = await response.json();
     return temples;
@@ -31,7 +31,7 @@ async function displayTemples() {
 }
 
 // Call the displayTemples function when the page loads
-window.onload = displayTemples;
+window.onload = displayTemples;*/
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
