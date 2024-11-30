@@ -1,0 +1,73 @@
+:root {
+    --font-family: Arial, sans-serif;
+    --color-text: #ffdf00;
+    --color-background-header-footer: #009c3b;
+    --color-background-card: #302681;
+    --color-text-card: whitesmoke;
+    --color-background-card-header: navy;
+    --padding-container: 2em;
+    --padding-card: 1em;
+    --border-radius-card: 10px;
+    --box-shadow-card: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --opacity-card: 0.8;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    color: var(--color-text);
+}
+
+header, footer {
+    background-color: var(--color-background-header-footer);
+    text-align: center;
+    padding: 1em 0;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: var(--padding-container);
+}
+
+.card {
+    background-color: var(--color-background-card);
+    border-radius: var(--border-radius-card);
+    margin: 1em;
+    padding: var(--padding-card);
+    width: 300px;
+    box-shadow: var(--box-shadow-card);
+    color: var(--color-text-card);
+    opacity: var(--opacity-card);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3em;
+}
+
+.label {
+    grid-column: 1 / 2;
+    text-align: right;
+    margin: 0;
+}
+
+.value {
+    grid-column: 2 / 3;
+    text-align: left;
+    margin: 0;
+}
+
+.card h2 {
+    color: var(--color-text-card);
+    padding: 0.5em;
+    margin-left: -1.2em;
+    margin-bottom: 0.5em;
+    margin-right: 0;
+    background-color: var(--color-background-card-header);
+    border-radius: var(--border-radius-card);
+    display: flex;
+    align-items: center;
+    grid-column: span 2;
+}
