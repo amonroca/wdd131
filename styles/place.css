@@ -1,9 +1,9 @@
 :root {
     --font-family: "Exo 2", sans-serif;
-    --color-text: whitesmoke;
-    --color-background-header-footer: #009c3b;
-    --color-background-card: #302681;
-    --color-text-card: whitesmoke;
+    --color-text: white;
+    --color-background-header-footer: #186218;
+    --color-background-card: #103F8E;
+    --color-text-card: white;
     --color-background-card-header: navy;
     --padding-container: 2em;
     --padding-card: 1em;
