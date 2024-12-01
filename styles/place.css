@@ -1,6 +1,6 @@
 :root {
-    --font-family: Arial, sans-serif;
-    --color-text: #ffdf00;
+    --font-family: "Exo 2", sans-serif;
+    --color-text: whitesmoke;
     --color-background-header-footer: #009c3b;
     --color-background-card: #302681;
     --color-text-card: whitesmoke;
@@ -34,14 +34,7 @@ header, footer {
 }
 
 .card {
-    /*background-color: var(--color-background-card);
-    border-radius: var(--border-radius-card);
-    margin: 1em;
-    padding: var(--padding-card);
     width: 300px;
-    box-shadow: var(--box-shadow-card);
-    color: var(--color-text-card);
-    opacity: var(--opacity-card);*/
     align-items: center;
     color: black;
     display: grid;
@@ -62,13 +55,6 @@ header, footer {
 }
 
 .card h2 {
-    /*color: var(--color-text-card);
-    padding: 0.5em;
-    margin-left: -1.2em;
-    margin-bottom: 0.5em;
-    margin-right: 0;
-    background-color: var(--color-background-card-header);
-    border-radius: var(--border-radius-card);*/
     padding: 0.5em;
     margin: auto;
     align-items: center;
