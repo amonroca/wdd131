@@ -34,14 +34,16 @@ header, footer {
 }
 
 .card {
-    background-color: var(--color-background-card);
+    /*background-color: var(--color-background-card);
     border-radius: var(--border-radius-card);
     margin: 1em;
     padding: var(--padding-card);
     width: 300px;
     box-shadow: var(--box-shadow-card);
     color: var(--color-text-card);
-    opacity: var(--opacity-card);
+    opacity: var(--opacity-card);*/
+    align-items: center;
+    color: black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.3em;
@@ -60,14 +62,21 @@ header, footer {
 }
 
 .card h2 {
-    color: var(--color-text-card);
+    /*color: var(--color-text-card);
     padding: 0.5em;
     margin-left: -1.2em;
     margin-bottom: 0.5em;
     margin-right: 0;
     background-color: var(--color-background-card-header);
-    border-radius: var(--border-radius-card);
-    display: flex;
+    border-radius: var(--border-radius-card);*/
+    padding: 0.5em;
+    margin: auto;
     align-items: center;
     grid-column: span 2;
+}
+
+.weather h2::after {
+    content: url('../images/weather-clouds-sun-sunny-icon.svg');
+    width: 36px;
+    height: 36px;
 }
