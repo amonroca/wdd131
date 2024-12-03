@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Charm', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: rgb(17, 17, 80);
+    color: whitesmoke;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+	text-align: left;
+	font-family: 'Charm', cursive;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+h2 {
+		font-size: 1.2rem;
+		color: navy;
+		text-align: center;
+		margin: 1rem;
+	}
+
+nav {
+	max-width: 700px;
+	margin: 1rem auto;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+    color: #fff;
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: rgb(17, 17, 80);
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: whitesmoke;
+	color: navy;
+    border: 1px solid rgba(218, 165, 32, 0.459);
+	font-weight: 700;
+}
+
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "📍";
+}
+
+.stuff {
+	margin: 0.5em;
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+	
+}
+
+.temple-card {
+    margin: .5rem;
+    border: 1px solid rgba(218, 165, 32, 0.459);
+    padding: 1rem;
+    background-color: #f3f1e4d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: .5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+section img {
+    width: 300px;
+    height: 187px;
+    box-shadow: 0 0 30px #777;
+    margin: .5rem;
+	object-fit: cover;
+}
+
+footer {
+    background-color: rgb(17, 17, 80);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
