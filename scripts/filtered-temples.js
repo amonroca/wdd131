@@ -1,5 +1,6 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
+const pageTitle = document.querySelector('#page-title');
 
 const temples = [
     {
@@ -140,7 +141,7 @@ const createTempleCards = (filteredTemples) => {
         card.appendChild(dedicated);
 
         const area = document.createElement('p');
-        area.innerHTML = `<strong>Area:</strong> ${temple.area} sq ft`;
+        area.innerHTML = `<strong>Size:</strong> ${temple.area} sq ft`;
         card.appendChild(area);
 
         // Create and append img element for temple image
@@ -178,6 +179,7 @@ const filterTemples = (criteria) => {
     }
 
     createTempleCards(filteredTemples);
+	pageTitle.textContent = criteria;
 };
 
 // Add event listeners to menu options
