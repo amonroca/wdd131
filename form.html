@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form to review and rate a given product">
+    <meta name="author" content="Amon Roca">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script type="module" src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form id="product-review-form" method="get" action="review.html" class="prf">
+            <label>The fields marked with an asteritic (*) are required.</label>
+            <label for="product-list">Product Name*</label>
+            <select id="product-list" name="product-list" required>
+                <option value="" selected disabled>Select a Product</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label id="fivestar-label">Rate your experience*</label>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            </fieldset>
+
+            <label for="installation-date">Installation Date*</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+
+            <fieldset>
+                <legend>Most Useful Features</legend>
+                <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="Design"> Design</label>
+            </fieldset>
+
+            <label for="review">Review</label>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name">
+
+            <input type="submit" id="btn-post-review" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            <span id="year"></span> 
+            <span>&#127918; Amon Roca &#127918;</span>
+            <span>Brazil</span>
+        </p>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+</html>

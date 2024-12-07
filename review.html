@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review Confirmation">
+    <meta name="author" content="Amon Roca">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/review.css">
+    <script type="module" src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Review Confirmation</h1>
+    </header>
+    <main>
+        <section id="confirmation-message">
+            <h2>Thank you for your review!</h2>
+            <p>Your review has been submitted successfully. Here are the details of your review:</p>
+            <ul>
+                <li><strong>Product Name:</strong> <span id="product-name"></span></li>
+                <li><strong>Your Overall Rating:</strong> <span id="overall-rating"></span></li>
+                <li><strong>Average Rating:</strong> <span id="average-rating"></span></li>
+                <li><strong>Installation Date:</strong> <span id="installation-date"></span></li>
+                <li><strong>Most Useful Features:</strong> <span id="useful-features"></span></li>
+                <li><strong>Review:</strong> <span id="review-text"></span></li>
+                <li><strong>Your Name:</strong> <span id="reviewer-name"></span></li>
+            </ul>
+            <p id="review-count"></p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span id="year"></span> 
+            <span>&#127918; Amon Roca &#127918;</span>
+            <span>Brazil</span>
+        </p>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+</html>
