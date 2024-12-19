@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackYourStride - Events</title>
+    <meta name="description" content="TrackYourStride Running Events Calendar">
+    <meta name="author" content="Amon Roca">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-larger.css">
+    <script src="scripts/trackyourstride.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1>TrackYourStride</h1>
+            <button id="menu-button" aria-label="Menu">&#9776;</button>
+        </div>
+        <nav id="navigation" class="hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="training.html">Training Plans</a></li>
+                <li><a href="stories.html">Inspiring Stories</a></li>
+                <li><a href="events.html">Events Calendar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/hero-image-color-scheme.webp" alt="Training Plans Hero Image" loading="lazy">
+            <div class="hero-text">
+                <h2>Running Events Calendar</h2>
+                <p>Discover upcoming running events and log your personal training sessions.</p>
+            </div>
+        </div>
+        <div class="content">
+            <section class="training-log">
+                <h3>Log Your Training Session</h3>
+                <form id="trainingForm">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
+                    <label for="distance">Distance (km):</label>
+                    <input type="number" id="distance" step="0.1" required>
+                    <label for="notes">Notes:</label>
+                    <textarea id="notes"></textarea>
+                    <button type="submit">Add Training Session</button>
+                </form>
+                <h3>Your Training Sessions</h3>
+                <ul id="trainingList"></ul>
+            </section>
+            <section class="events-list">
+                <h3>Upcoming Running Events</h3>
+                <ul id="eventsList"></ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span id="year"></span> 
+            <span>&#127939; Amon Roca &#127939;</span>
+            <span>Brazil</span>
+        </p>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+</html>

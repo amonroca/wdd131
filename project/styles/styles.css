@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+#menu-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#navigation {
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navigation.show {
+    display: flex;
+}
+
+#navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#navigation ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+}
+
+#navigation ul li a:hover {
+    background-color: #efac3e;
+    color: #2c3e50;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    max-height: max(50vh, 300px);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.hero-text p {
+    display: none;
+}
+
+.benefits {
+    padding: 2rem;
+    text-align: center;
+}
+
+.benefits-card {
+    border: 2px solid #efac3e;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    text-align: justify;
+}
+
+.benefits-card p {
+    position: relative;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+}
+
+.benefits-card p::first-letter {
+    font-size: 2rem;
+    color: #efac3e;
+    font-weight: bold;
+    float: left;
+    margin-right: 0.5rem;
+    line-height: 1;
+}
+
+.benefits-card p:last-child {
+    border-bottom: none;
+}
+
+.about-author {
+    padding: 2rem;
+    text-align: center;
+}
+
+.author-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author-image img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.author-description {
+    flex: 1;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.training-plan {
+    padding: 2rem;
+    text-align: center;
+}
+
+.training-plan h2 {
+    color: #2c3e50;
+}
+
+.training-plan p {
+    text-align: justify;
+    position: relative;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+}
+
+.training-plan p::first-letter {
+    font-size: 2rem;
+    color: #efac3e;
+    font-weight: bold;
+    float: left;
+    margin-right: 0.5rem;
+    line-height: 1;
+}
+
+.training-plan table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.training-plan table, .training-plan th, .training-plan td {
+    border: 1px solid #efac3e;
+}
+
+.training-plan th, .training-plan td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.training-log input:required:valid {
+    border-left: solid 8px #2c9c13;
+}
+
+.training-log input:required:invalid {
+    border-left: solid 8px #9c2c13;
+}
+
+.intro {
+    width: 90%;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-stories {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.896);
+    margin: 20px 10px;
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.training-log {
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.training-log form {
+    display: flex;
+    flex-direction: column;
+}
+
+.training-log form label {
+    font-weight: bold;
+}
+
+.training-log form input,
+.training-log form textarea,
+.training-log form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.training-log form button {
+    background-color: #2c3e50;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.training-log form button:hover {
+    background-color: #efac3e;
+}
+
+#trainingList {
+    list-style: none;
+    padding: 0;
+}
+
+#trainingList li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #efefef;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.events-list {
+    width: 90%;
+    max-height: 32vh;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.events-list h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.events-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.events-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #efac3e;
+    border-radius: 5px;
+    color: #2c3e50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.events-list li:hover {
+    background-color: #27ae60;
+    color: #ffffff;
+}
+
+.content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    gap: 20px;
+}

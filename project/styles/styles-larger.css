@@ -1,0 +1,153 @@
+@media only screen and (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav {
+        flex: 1 1 50%;
+    }
+
+    header h1 {
+        margin-left: 1rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #navigation {
+        position: relative;
+        display: flex;
+    }
+
+    #navigation ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #navigation ul li {
+        margin-right: 20px;
+    }
+
+    #navigation ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .heading {
+        position: relative;
+        display: inline-block;
+        color: #27ae60;
+        font-size: 1.5rem;
+        margin: 8px;
+        margin-left: 50px;
+    }
+
+    .heading::before,
+    .heading::after {
+        content: "";
+        position: absolute;
+        top: 0.65em;
+        width: 8em;
+        height: 0.10em;
+        background-color: #27ae60;
+        left: -8.25em;
+    }
+
+    .heading::after {
+        left: initial;
+        right: -8.25em;
+    }
+    
+    .intro {
+        width: 90%;
+        margin: 20px auto;
+        text-align: left;
+    }
+
+    .intro h2 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .stories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .card-stories {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.896);
+        margin: 10px;
+        padding: 20px;
+        width: 30%;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .card-stories:hover {
+        transform: scale(1.05);
+    }
+
+    .card-stories img {
+        width: 20em;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .card-stories h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .card-stories p {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+    .training-log {
+        width: 50%;
+    }
+
+    .events-list {
+        width: 35%;
+        max-height: 66vh;
+    }
+
+    .content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .hero-text p {
+        display: flex;
+    }
+
+    .author-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .author-image img {
+        width: 100%;
+        max-height: 300px;
+        border-radius: 50%;
+    }
+
+    .about-author {
+        padding: 2rem;
+        text-align: left;
+        justify-content: space-around;
+    }
+}
